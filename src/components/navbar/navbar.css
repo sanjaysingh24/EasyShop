@@ -1,0 +1,36 @@
+
+.main-logo{
+    width: 50%;
+    margin-bottom: 0px;
+}
+.navbar{
+    padding: 0px;
+}
+.custom-nav{
+    box-shadow: 0px 0px 5px grey ;
+}
+.nav_Login{
+    position: relative;
+}
+.nav-item{
+    cursor: pointer;
+}
+.nav-item hr{
+    border: none;
+  margin: 0px;
+    height: 3px;
+    background-color: #ff4141;
+    border-radius: 10px;
+    width: 80%;
+}
+.cart_count{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: red ;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    right: -15px;
+    top: -5px;
+}
