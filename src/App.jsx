@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import Header from './components/navbar/Header';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Cart from './pages/Cart'
-import Shop from './pages/shop';
+import Shop from './pages/Shop';
 import Product from './pages/Product';
 import ShopCategory from './pages/ShopCategory';
 import Loginsignup from './pages/Loginsignup';
