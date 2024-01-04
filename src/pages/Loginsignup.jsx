@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer';
-import './css/signup.css';
+import './css/signUp.css';
 import { useState } from 'react';
 import Login from '../components/login/Login';
 import Signup from '../components/login/Signup';
