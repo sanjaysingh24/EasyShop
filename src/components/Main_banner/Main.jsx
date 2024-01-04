@@ -2,30 +2,26 @@ import React from 'react'
 import './Main.css';
 const Main = () => {
   return (
-    <section className='main-section'>
-        <div className="container">
-            <div className="row align-items-center">
-                <div className="col-lg-5 left_section">
-                    <div>
-                        <h2>NEW ARRIVALS ONLY</h2>
-
-
-                    </div>
-                    <div className='new_collection'>
-                        <p>new <img src="./Assets/hand_icon.png" alt="hand_icon"  className='img-fluid hand_icon'/>
-                    
-                        </p>
-                        <p>collections</p>
-                        <p>for everyone</p>
-              <button className='latest_collection_btn'>Latest Collection <span><img src="./Assets/arrow.png" alt="arrow" className='img-fluid' /></span></button>
-                    </div>
-                </div>
-                <div className="col-lg-7 right_section text-end">
-                  <p><img src="./Assets/hero_image.png" alt="hero_image" className='img-fluid hero_image' /></p>
-                </div>
-            </div>
-        </div>
+    <>
+    <section>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="./img/Banner-1.png" class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="./img/Banner-2.png" class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/Banner-3.png" class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+ 
+</div>
     </section>
+    </>
+
+  
   )
 }
 

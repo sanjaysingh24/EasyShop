@@ -3,13 +3,11 @@ import './Offer.css'
 const Offer = () => {
   return (
    <section>
-    <div className="container offer_banner">
-        <div className="col-lg-5">
-
-        </div>
-        <div className="col-lg-5">
-            <p><img src="./Assets/exclusive_image.png" alt="" /></p>
-        </div>
+    <div className="offer_banner">
+        <div className="">
+          <p><img src="./img/Banner-2.png" alt="second banner" className='img-fluid' /></p>
+          <button className='click_me_btn'>Shop now</button>
+        </div>  
     </div>
    </section>
   )

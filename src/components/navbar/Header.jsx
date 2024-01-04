@@ -1,18 +1,34 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react'
 import {Link,Outlet} from 'react-router-dom'
 import './navbar.css'
+import { ShopContext } from '../../context/Shop_context'
 const Header = () => {
 const[menu,setMenu] = useState("shop");  
-  
+const{getTotalcartitems} = useContext(ShopContext);
+const color ={
+  color:"red",
+  textDecoration: "none"
+}
+
   return (
 
     <>
-    <nav class="navbar navbar-expand-lg custom-nav ">
-  <div class="container">
-    <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg custom-nav align-items-center ">
+  <div class="container ">
+  <button class="mobile_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
     <p className='main-logo'>  <img src="./img/EASYSHOP.png" alt=""  className='img-fluid w-75'/></p>
     </a>
+
+    <div className='nav_Mobile '>
+    <Link to='/login' className='user_icon'><i class="fa-regular fa-circle-user"></i></Link>
+      <Link to ='/cart' className='cart_icon'>  <img width="32" height="32" src="https://img.icons8.com/material-outlined/96/fast-cart.png" alt="fast-cart"/></Link>
+        <div className='cart_count'>{getTotalcartitems()}</div>
+      </div>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,14 +42,15 @@ const[menu,setMenu] = useState("shop");
         
       </ul>
       <div className='nav_Login '>
-    <Link to='/login'>  <button type="button" class="btn btn-primary me-4">Login</button></Link>
-      <Link to ='/cart'>  <img src="./Assets/cart_icon.png" alt="cart_icon" className='img-fluid' /></Link>
-        <div className='cart_count'>0</div>
+    <Link to='/login'>  <button type="button" className=" me-4 login_btn">Login</button></Link>
+      <Link to ='/cart'>  <img width="40" height="40" src="https://img.icons8.com/material-outlined/96/fast-cart.png" alt="fast-cart" className='img-fluid'/></Link>
+        <div className='cart_count'>{getTotalcartitems()}</div>
       </div>
     
     </div>
   </div>
 </nav>
+
     </>
   )
 }

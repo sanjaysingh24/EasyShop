@@ -11,6 +11,8 @@
     font-size: 26px;
 }
 .new_collection p{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 900;
 font-size: 70px;
 margin: 0px;
 line-height: 76px;
@@ -23,5 +25,25 @@ font-weight: 500;
     padding: 15px 40px;
     border-radius: 30px;
     color: white;
+    margin-top:40px ;
 
+}
+.carousel-item{
+    height: 80vh;
+  
+}
+.carousel-item img{
+
+    height: 80vh;
+    object-fit: cover;
+}
+/* mediaQueryformain */
+@media screen and (min-width:300px) and (max-width:551px) {
+    .carousel-item img {
+        height: 24vh;
+        object-fit: cover;
+    }
+    .carousel-inner{
+        height: 24vh;
+    }
 }

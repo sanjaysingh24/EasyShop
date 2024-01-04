@@ -6,9 +6,12 @@ import Header from './components/navbar/Header';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Cart from './pages/Cart'
 import Shop from './pages/shop';
-import Product from './pages/product';
-import ShopCategory from './pages/shopcategory';
+import Product from './pages/Product';
+import ShopCategory from './pages/ShopCategory';
 import Loginsignup from './pages/Loginsignup';
+import men_banner from '../public/Assets/banner_mens.png';
+import women_banner from '../public/Assets/banner_women.png';
+import kid_banner from '../public/Assets/banner_kids.png';
 
 
 function App() {
@@ -21,9 +24,9 @@ function App() {
     <Header/>
     <Routes>
       <Route path ='/' element={<Shop/>}/>
-      <Route path ='/men' element={<ShopCategory category ="mens"/>}/>
-      <Route path ='/women' element={<ShopCategory category ="women"/>}/>
-      <Route path ='/kids' element={<ShopCategory category ="kids"/>}/>
+      <Route path ='/men' element={<ShopCategory banner ={men_banner} category ="men"/>}/>
+      <Route path ='/women' element={<ShopCategory banner={women_banner} category ="women"/>}/>
+      <Route path ='/kids' element={<ShopCategory banner={kid_banner} category ="kid"/>}/>
       <Route path ='/Product' element={<Product/>}>
       <Route path =':ProductId' element={<Product/>}/>
       </Route>
