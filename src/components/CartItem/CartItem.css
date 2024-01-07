@@ -193,11 +193,11 @@ margin-bottom: 0px;
     font-size: 14px;
 }
 .cartitem-promobox{
-width: 94%;
+width: 100%;
 margin-bottom: 30px;
 }
 .cartitem-promobox input{
- width: 220px !important;
+ width: 240px !important;
 }
 .cartitem-promobox button {
 width: 129px !important;
