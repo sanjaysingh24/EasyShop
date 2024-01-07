@@ -42,7 +42,15 @@ margin-top: 3px;
     margin-top: 20px;
     font-size: 13px;
 }
-
+.success{
+    color: rgb(27, 210, 125);
+    font-size: 13px;
+    font-weight: 600;
+}
+.icon_color{
+    color: rgb(27, 210, 125);
+    margin-left: 30px;
+}
 @media screen and (min-width:300px) and (max-width:551px) {
     .product-image_size {
         width: 100%;

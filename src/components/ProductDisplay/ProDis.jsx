@@ -1,11 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Pro.css'
 import star_icon from '../../../public/Assets/star_icon.png';
 import star_dull from '../../../public/Assets/star_dull_icon.png';
 import Footer from '../Footer/Footer'
 import { ShopContext } from '../../context/Shop_context';
 const ProDis = ({product}) => {
-const {addTocart} = useContext(ShopContext)
+const {addTocart,success} = useContext(ShopContext);
+
+const handleclick = ()=>{
+   addTocart(product.id);
+ 
+}
 
 return (
 
@@ -73,7 +78,7 @@ return (
                  </div>
             </div>
 
-           <div> <button className='add_to_Cart' onClick={()=>{addTocart(product.id)}}>Add to Cart</button></div>
+           <div> <button className='add_to_Cart' onClick={handleclick}>Add to Cart</button><span className='icon_color'></span> <span className='success'>{success}</span></div>
             <p className='right_category mb-0'><span>Category: {product.category} </span> </p>
             <p className='right_category mt-0'><span>Name: {product.name} </span> </p>
             

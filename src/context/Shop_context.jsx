@@ -13,9 +13,18 @@ const getDefaultCart=()=>{
 const ShopContextProvider = (props)=>{
     const [Cartitem,SetCartitems] = useState(getDefaultCart());
 
+    const[success,SetSuccess] = useState("");
+
     const addTocart = (itemId)=>{
         SetCartitems((prev)=>({...prev,[itemId]:prev[itemId]+1}));
-        console.log(Cartitem);
+        SetSuccess("👍 Added to cart");
+        setTimeout(() => {
+            SetSuccess("");
+        }, 3000);
+
+    // Set a timeout to remove the success message after 3 seconds (adjust as needed)
+ 
+       
     }
     const removefromcart = (itemId)=>{
         SetCartitems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
@@ -33,15 +42,17 @@ const ShopContextProvider = (props)=>{
     }
 
     const getTotalcartitems = ()=>{
-        let totalitem  =0;
+        let totalitem=0;
         for(const items in Cartitem){
+        
             if(Cartitem[items]>0){
-                totalitem = Cartitem[items];
+              
+                totalitem += Cartitem[items];
             }
         }
         return totalitem;
     }
-    const Contextvalue ={getTotalcartitems,all_products,Cartitem,addTocart,removefromcart,getTotalCartAmmount};
+    const Contextvalue ={getTotalcartitems,all_products,Cartitem,addTocart,removefromcart,getTotalCartAmmount,success};
     return(
         <ShopContext.Provider value = {Contextvalue}>
              {props.children}

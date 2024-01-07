@@ -126,6 +126,10 @@ width: 60px;
 .main p{
 margin-bottom: 0px;
 }
+.success
+{
+    width: 30%;
+}
 @media screen and (min-width:300px) and (max-width:551px) {
     .cartitems-format-main{
         display: none;
