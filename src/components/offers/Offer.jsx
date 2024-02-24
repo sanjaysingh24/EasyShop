@@ -5,7 +5,7 @@ const Offer = () => {
    <section>
     <div className="offer_banner">
         <div className="">
-          <p><img src="./img/Banner-2.png" alt="second banner" className='img-fluid' /></p>
+          <p><img src="./img/Banner-2.webp" alt="second banner" className='img-fluid' /></p>
           <button className='click_me_btn'>Shop now</button>
         </div>  
     </div>
