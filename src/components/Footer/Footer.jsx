@@ -9,7 +9,7 @@ const Footer = () => {
               <div className="col-lg-12">
               <div className="text-center">
                     <p className='footer_logo text-center mt-lg-3 mt-0'>
-                       <a href="/"> <img src="./img/EASYSHOP-footer.png" alt="" className='img-fluid w-25'/></a>
+                       <a href="/"> <img src="./img/EASYSHOP-footer.webp" alt="" className='img-fluid w-25'/></a>
                         </p>
                  
                 </div>

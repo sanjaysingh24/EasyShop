@@ -20,12 +20,12 @@ const color ={
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-    <p className='main-logo'>  <img src="./img/EASYSHOP.png" alt=""  className='img-fluid w-75'/></p>
+    <p className='main-logo'>  <img src="./img/EASYSHOP.webp" alt=""  className='img-fluid w-75'/></p>
     </a>
 
     <div className='nav_Mobile '>
     <Link to='/login' className='user_icon'><i class="fa-regular fa-circle-user"></i></Link>
-      <Link to ='/cart' className='cart_icon'>  <img width="32" height="32" src="https://img.icons8.com/material-outlined/96/fast-cart.png" alt="fast-cart"/></Link>
+      <Link to ='/cart' className='cart_icon'>  <img width="32" height="32" src="https://img.icons8.com/material-outlined/96/fast-cart.webp" alt="fast-cart"/></Link>
         <div className='cart_count'>{getTotalcartitems()}</div>
       </div>
     
