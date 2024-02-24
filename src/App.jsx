@@ -9,9 +9,9 @@ import Shop from './pages/Shop';
 import Product from './pages/Product';
 import ShopCategory from './pages/ShopCategory';
 import Loginsignup from './pages/Loginsignup';
-import men_banner from '../public/Assets/banner_mens.png';
-import women_banner from '../public/Assets/banner_women.png';
-import kid_banner from '../public/Assets/banner_kids.png';
+import men_banner from '../public/Assets/banner_mens.webp';
+import women_banner from '../public/Assets/banner_women.webp';
+import kid_banner from '../public/Assets/banner_kids.webp';
 
 
 function App() {

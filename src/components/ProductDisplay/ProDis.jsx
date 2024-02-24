@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './Pro.css'
-import star_icon from '../../../public/Assets/star_icon.png';
-import star_dull from '../../../public/Assets/star_dull_icon.png';
+import star_icon from '../../../public/Assets/star_icon.webp';
+import star_dull from '../../../public/Assets/star_dull_icon.webp';
 import Footer from '../Footer/Footer'
 import { ShopContext } from '../../context/Shop_context';
 const ProDis = ({product}) => {

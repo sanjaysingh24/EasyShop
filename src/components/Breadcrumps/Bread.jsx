@@ -1,6 +1,6 @@
 import React from 'react'
 import './Bread.css';
-import arrow_icon from '../../../public/Assets/breadcrum_arrow.png'
+import arrow_icon from '../../../public/Assets/breadcrum_arrow.webp'
 const Bread = ({product}) => {
 
   return (
